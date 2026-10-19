@@ -37,6 +37,29 @@ cropped, and you can always go back to the full 3:2 frame. No pixel is ever thro
 |---|---|
 | ![Film menu](docs/screenshots/film-menu.png) | ![Level](docs/screenshots/level.png) |
 
+## Sample photos
+
+Shot on a Sony α7R with DarkFrame on Réunion Island, framed in camera and cropped in Lightroom
+from the XMP written by the app.
+
+**2.35:1**
+
+<img src="docs/samples/2.35_salazie_9679.jpg">
+
+| | |
+|---|---|
+| <img src="docs/samples/2.35_plaines_9639.jpg"> | <img src="docs/samples/2.35_panyandy_9677.jpg"> |
+| <img src="docs/samples/2.35_salazie_9680.jpg"> | <img src="docs/samples/2.35_salazie_9681.jpg"> |
+| <img src="docs/samples/2.35_maison_9929.jpg"> | <img src="docs/samples/2.35_vierge_9747.jpg"> |
+| <img src="docs/samples/2.35_mare_9804.jpg"> | |
+
+**4:3, 7:6 and 1:1**
+
+| 4:3 | 7:6 | 1:1 |
+|---|---|---|
+| <img src="docs/samples/4x3_cascade-blanche_9854.jpg"> | <img src="docs/samples/7x6_cascade-blanche_9846.jpg"> | <img src="docs/samples/1x1_cascade-blanche_9883.jpg"> |
+| <img src="docs/samples/4x3_cascade-blanche_9911.jpg"> | <img src="docs/samples/7x6_cascade-blanche_9908.jpg"> | <img src="docs/samples/1x1_mare_9807.jpg"> |
+
 ## Controls (α7R)
 
 | Button | Action |
