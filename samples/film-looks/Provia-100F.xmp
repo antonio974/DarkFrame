@@ -1,0 +1,45 @@
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="DarkFrame">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+   crs:HasSettings="True"
+   crs:HasCrop="False"
+   crs:ProcessVersion="11.0"
+   crs:Contrast2012="+15"
+   crs:Highlights2012="-15"
+   crs:Blacks2012="-10"
+   crs:Vibrance="+10"
+   crs:Saturation="+5"
+   crs:HueAdjustmentGreen="+5"
+   crs:SaturationAdjustmentBlue="+10"
+   crs:BlueSaturation="+10"
+   crs:GrainAmount="5"
+   crs:GrainSize="15"
+   crs:GrainFrequency="50"
+   crs:PostCropVignetteAmount="-6"
+   crs:PostCropVignetteMidpoint="50"
+   crs:PostCropVignetteFeather="60"
+   crs:PostCropVignetteRoundness="0"
+   crs:PostCropVignetteStyle="1"
+   crs:PostCropVignetteHighlightContrast="0"
+   crs:ToneCurveName2012="Custom"
+   crs:AlreadyApplied="False">
+   <crs:ToneCurvePV2012>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>64, 60</rdf:li>
+     <rdf:li>128, 128</rdf:li>
+     <rdf:li>192, 198</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurvePV2012>
+   <dc:subject>
+    <rdf:Bag>
+     <rdf:li>Format 3:2</rdf:li>
+     <rdf:li>Film Provia 100F</rdf:li>
+    </rdf:Bag>
+   </dc:subject>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
