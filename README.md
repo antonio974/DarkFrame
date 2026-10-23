@@ -1,3 +1,5 @@
+<img src="docs/icon.png" width="96" align="right">
+
 # DarkFrame
 
 **Aspect-ratio framing, film simulations and a cleaner shooting screen for the Sony α7R (ILCE-7R).**
