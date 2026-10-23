@@ -8,7 +8,11 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
 
-/** Log in DARKFRAME/LOG.TXT on the SD card, for debugging on the camera. */
+/**
+ * Log in DARKFRAME/LOG.TXT on the SD card, for debugging on the camera.
+ * Off by default: the app never creates the folder. To turn logging on, create a DARKFRAME folder
+ * at the root of the card.
+ */
 public final class Log {
     private Log() {}
 
@@ -19,7 +23,7 @@ public final class Log {
     public static synchronized void write(String message, Throwable error) {
         try {
             File dir = new File(Environment.getExternalStorageDirectory(), "DARKFRAME");
-            dir.mkdirs();
+            if (!dir.isDirectory()) return;
             PrintWriter out = new PrintWriter(new FileWriter(new File(dir, "LOG.TXT"), true));
             try {
                 out.println(new Date() + " : " + message);

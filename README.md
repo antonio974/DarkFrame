@@ -120,7 +120,8 @@ DarkFrame is installed with [Sony-PMCA-RE](https://github.com/ma1co/Sony-PMCA-RE
 
 To uninstall: **MENU › Application › Application Management › Delete**.
 
-Diagnostics are written to `DARKFRAME/LOG.TXT` on the memory card.
+DarkFrame creates no folder on the memory card. To get a diagnostic log, create a `DARKFRAME` folder at
+the root of the card: the app then writes `DARKFRAME/LOG.TXT`.
 
 ## Lightroom
 
