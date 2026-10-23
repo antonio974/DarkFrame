@@ -40,7 +40,11 @@ public class RatioMaskTest {
         check("wraps after the last", RatioMask.nextFormat(RatioMask.FORMATS.length - 1, 1), 0);
         check("wraps before the first", RatioMask.nextFormat(0, -1), RatioMask.FORMATS.length - 1);
         check("C2 next", RatioMask.FORMATS[RatioMask.cycleFormat(RatioMask.DEFAULT_FORMAT)].name, "65x24");
-        check("C2 wraps", RatioMask.FORMATS[RatioMask.cycleFormat(RatioMask.FORMATS.length - 1)].name, "1:1");
+        check("C2 wraps", RatioMask.FORMATS[RatioMask.cycleFormat(RatioMask.FORMATS.length - 1)].name, "9:16");
+        check("4:5 vertical: full height", XmpCrop.forRatio(RatioMask.SENSOR_RATIO, 4f / 5f).top == 0 && XmpCrop.forRatio(RatioMask.SENSOR_RATIO, 4f / 5f).bottom == 1, true);
+        check("4:5 vertical: side bands", Math.abs(XmpCrop.forRatio(RatioMask.SENSOR_RATIO, 4f / 5f).left - 7.0 / 30) < 1e-6, true);
+        check("MP 4:5", RatioMask.megapixelText(4f / 5f), "19.3 MP");
+        check("9:16 is first", RatioMask.FORMATS[0].name, "9:16");
         check("saved index out of range", RatioMask.clampIndex(42), RatioMask.FORMATS.length - 1);
 
         // 65x24 (XPan) on a 1200x800 viewfinder: 178 px top/bottom bars.

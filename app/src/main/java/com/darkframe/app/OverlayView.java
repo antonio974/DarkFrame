@@ -427,8 +427,8 @@ public class OverlayView extends View {
         if (RatioMask.gridSpiral(grid) != 0)
             drawSpiral(canvas, v, RatioMask.gridSpiral(grid) < 0);
 
-        // Format at the top, settings at the bottom: in the bands or the screen margins when there are any.
-        float x = v.left + 8;
+        // Format at the top left, settings at the bottom, in the screen margins (also for vertical formats).
+        float x = 8;
         float y = 8 - textPaint.ascent();
         String label = "AR " + format.name + "  " + RatioMask.megapixelText(format.ratio) + (opacity < MAX_OPACITY ? "  " + opacity + "%" : "");
         canvas.drawText(label, x, y, textPaint);

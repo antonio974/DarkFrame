@@ -42,8 +42,16 @@ public final class RatioMask {
         }
     }
 
-    /** Formats cycled by the dial, by increasing ratio. */
+    /**
+     * Formats cycled by the dial, by increasing ratio. The vertical formats (9:16 to 6:7) keep the full
+     * sensor height and mask the sides, for portrait crops with the camera held level.
+     */
     public static final Format[] FORMATS = {
+            new Format("9:16", 9f / 16f),
+            new Format("2:3", 2f / 3f),
+            new Format("3:4", 3f / 4f),
+            new Format("4:5", 4f / 5f),
+            new Format("6:7", 6f / 7f),
             new Format("1:1", 1f),
             new Format("7:6", 7f / 6f),
             new Format("5:4", 5f / 4f),
@@ -56,7 +64,7 @@ public final class RatioMask {
     };
 
     /** Format on first launch: 2.35:1. */
-    public static final int DEFAULT_FORMAT = 7;
+    public static final int DEFAULT_FORMAT = indexOf("2.35:1");
 
     /** Index of the format with this name, or -1. The format is saved by name to survive changes to the list. */
     public static int indexOf(String name) {

@@ -17,6 +17,7 @@ cropped, and you can always go back to the full 3:2 frame. No pixel is ever thro
 ## Features
 
 - **Aspect-ratio bands:** 1:1, 7:6, 5:4, 4:3, 3:2, 16:9, 6x12, 2.35:1 and 65x24 (XPan-style),
+  plus vertical formats 9:16, 2:3, 3:4, 4:5 and 6:7 (side bands, camera held level),
   with adjustable band opacity.
 - **Non-destructive crop:** an `.xmp` sidecar next to each RAW (`DSC01234.xmp`), or an XMP
   block inserted into the file for JPEG-only shots (the image data is not re-encoded).
@@ -64,7 +65,7 @@ from the XMP written by the app.
 
 | Button | Action |
 |---|---|
-| **C2** | Next aspect ratio (cycles 1:1 → … → 65x24 → 1:1) |
+| **C2** | Next aspect ratio (cycles 9:16 → … → 1:1 → … → 65x24 → 9:16) |
 | **Left / Right** | Previous / next aspect ratio |
 | **Up / Down** | Band opacity |
 | **Centre** | Hide / show the overlay |
